@@ -10,24 +10,32 @@
 #include <vector>
 
 #include "Player.h"
+#include "Card.h"
+#include "Deck.h"
 //i player interface 
 
 using namespace std;
 
 
 //void Deck(vector<int> &deck);
+
+//deck of cards
 std::vector<int> deck;
 std::vector<string> Suit;
 
-std::vector<int> players;
-std::vector<int> teams;
+vector<Player> players;
+
+//holds teams
+std::vector<int> redteam;
+std::vector<int> blueteam;
+
 
 namespace Euchre{
 
 
 int main()
 {
-    
+    createCards();
 
 }
 
@@ -37,7 +45,7 @@ void setUpTeams()
 
 }
 
-void sumHands()
+void sumHands(int** x)
 {
     //return accumulate(hand.begin(), hand.end(), 0);
 
