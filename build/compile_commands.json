@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/devinsalgado35/Desktop/C++2/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -o CMakeFiles/app.dir/Euchre.cpp.o -c /Users/devinsalgado35/Desktop/C++2/Euchre.cpp",
+  "file": "/Users/devinsalgado35/Desktop/C++2/Euchre.cpp",
+  "output": "CMakeFiles/app.dir/Euchre.cpp.o"
+}
+]

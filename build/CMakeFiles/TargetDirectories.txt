@@ -1,0 +1,3 @@
+/Users/devinsalgado35/Desktop/C++2/build/CMakeFiles/app.dir
+/Users/devinsalgado35/Desktop/C++2/build/CMakeFiles/edit_cache.dir
+/Users/devinsalgado35/Desktop/C++2/build/CMakeFiles/rebuild_cache.dir
