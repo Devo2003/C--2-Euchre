@@ -8,6 +8,7 @@
 #include <numeric>
 #include <random>
 #include <vector>
+#define SCORE 10
 
 #include "Player.h"
 #include "Card.h"
@@ -20,23 +21,24 @@ using namespace std;
 //void Deck(vector<int> &deck);
 
 //deck of cards
-std::vector<int> deck;
-std::vector<string> Suit;
+vector<int> deck;
 
 vector<Player> players;
 
-//holds teams
-std::vector<int> redteam;
-std::vector<int> blueteam;
+//holds players teams
+vector<Player> teamOne;
+vector<int> teamTwo;
 
 
-namespace Euchre{
+
+
+
 
 
 int main()
 {
     createCards();
-
+    return 0;
 }
 
 void setUpTeams()
@@ -66,6 +68,13 @@ void showDeck()
   }
   std::cout << "\n" << endl;
 }
+void Shuffle(vector<int> &deck) 
+{
+
+  std::random_shuffle(deck.begin(), deck.end());
+}
+
+
 
 //creates deck
 void Deck() 
@@ -85,5 +94,4 @@ void Deck()
       }
     }
   }
-}
 }
