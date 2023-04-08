@@ -10,8 +10,20 @@ std::vector<Card> cards;
 Card c;
 
 //sets up all combination of card types
-void createCards(){
-    
+void createCards()
+{
+
+    for (int i = 0; i < cNames->length(); i++)
+    {
+        for (int j = 0; j < Suits->length(); j++)
+        {
+          
+          std::cout << cNames[j] + " of " +  Suits[i];
+
+        }
+    }
+}
+    /*
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 4; j++)
@@ -63,7 +75,9 @@ void createCards(){
         
     }
 }
+*/
 /*
+
 void Deck() 
 {
   for (int i = 0; i < 4; i++) 

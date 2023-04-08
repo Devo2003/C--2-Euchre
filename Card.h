@@ -1,29 +1,35 @@
 #pragma once
 #include <vector>
 #include <iostream>
+#include <string>
 
 
-enum Suits{Diamonds, Hearts, Spades, Clubs};
+const std::string Suits[] = {"Diamonds", "Hearts", "Spades", "Clubs"};
 
 //enum cardNames{ Ace, Nine, Ten, Jack, Queen, King };
 
-vector<std::string>cNames{"Ace", "Nine", "Ten", "Jack", "Queen", "King"};
+const std::string cNames[] = {"Ace", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
 
 class Card{
 public: 
 
-int Value;
 
-Suits Suit;
-string cNames;
+//Card(std::string suit, std::string names);
+//td::string suit;
 
-void _cards(Suits suit, int value, string name)
-{
-    Value = value;
-    Suit = suit;
-    cNames = name;
 
-}
+//int Value;
+//string names;
+
+
+
+
+
+
+
+
+
+
 
 };
 
