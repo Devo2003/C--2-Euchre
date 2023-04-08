@@ -13,12 +13,15 @@ Card c;
 void createCards()
 {
 
-    for (int i = 0; i < cNames->length(); i++)
+    for (int i = 1; i < Suits->size(); i++)
     {
-        for (int j = 0; j < Suits->length(); j++)
+        for (int j = 1; j < cNames->size(); j++)
         {
           
-          std::cout << cNames[j] + " of " +  Suits[i];
+          std::cout << cNames[j] + " of " +  Suits[i] << std::endl;
+          
+
+          //std::cout << "hey" << std::endl;
 
         }
     }
