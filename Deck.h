@@ -13,9 +13,9 @@ Card c;
 void createCards()
 {
 
-    for (int i = 1; i < Suits->size(); i++)
+    for (int i = 0; i < Suits->size(); i++)
     {
-        for (int j = 1; j < cNames->size(); j++)
+        for (int j = 0; j < cNames->size(); j++)
         {
           
           std::cout << cNames[j] + " of " +  Suits[i] << std::endl;
