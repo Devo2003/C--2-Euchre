@@ -4,11 +4,11 @@
 #include <string>
 
 
-const std::string Suits[5] = {"Diamonds", "Hearts", "Spades", "Clubs"};
+const std::string Suits[4] = {"Diamonds", "Hearts", "Spades", "Clubs"};
 
 //enum cardNames{ Ace, Nine, Ten, Jack, Queen, King };
 
-const std::string cNames[8] = {"Ace", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
+const std::string cNames[7] = {"Ace", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
 
 class Card{
 public: 
