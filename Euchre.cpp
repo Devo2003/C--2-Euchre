@@ -49,7 +49,10 @@ int main()
   int playerSum = 0;
 
   std::vector<int> deck;
+  // dealer 
   std::vector<int> dealerHand;
+  //3 players
+  //total 4 players
   std::vector<int> playerHand;
   //Seed
   srand(time(NULL));
@@ -59,7 +62,7 @@ int main()
 
     Deck(deck);    // Creation of the deck
     Shuffle(deck); // Shuffling of the cards
-    Deal(deck, dealerHand);//Players starr with two cards
+    Deal(deck, dealerHand);//Players two cards at start
     Deal(deck, dealerHand);
     Deal(deck, playerHand);
     Deal(deck, playerHand);
@@ -69,25 +72,25 @@ int main()
 
     cout << "---------" << endl;
 
-    // PLAYER AI CODE to tell when to deal, or stop dealing a card
-    if (sumHands(playerHand) < 16) 
+    
+    if (sumHands(playerHand) < 4) 
     {
-      cout << "Hit! Deal a card" << endl;
+      cout << "trump! Deal a card" << endl;
       Deal(deck, playerHand);
 
-    } else if (sumHands(playerHand) > 16) 
+    } else if (sumHands(playerHand) > 6) 
     {
-      cout << "Stay! Stopped Dealing cards" << endl;
+      cout << "Stopped Dealing cards" << endl;
 
       cout << playerSum << endl;
     }
 
     // DEALER AI CODE to tell when to deal, or stop dealing a card
-    if (sumHands(dealerHand) < 16) 
+    if (sumHands(dealerHand) < 6) 
     {
-      cout << "Hit! Deal a card" << endl;
+      cout << "play a card" << endl;
       Deal(deck, dealerHand);
-    } else if (sumHands(dealerHand) > 16) 
+    } else if (sumHands(dealerHand) > 6) 
     {
       cout << "Stay! Stopped Dealing cards" << endl;
       cout << dealerSum << endl;
@@ -110,40 +113,20 @@ int main()
     // determines who busts, or win the round
 
     // ERROR ---
-    if (playerSum > 21) 
+    if (playerSum > dealerSum) 
     {
-      cout << "You Bust, Dealer wins this round" << endl;
-      dealerScore++;
-
-    } else if (playerSum == 21) 
-    {
-      cout << "Player Wins this round" << endl;
-      playerScore++;
-
-    } else if (dealerSum > 21) 
-    {
-      cout << "You Bust, Player wins this round" << endl;
-      playerScore++;
-
-    } else if (dealerSum == 21) 
-    {
-      cout << "Player Wins this round" << endl;
-      dealerScore++;
-
-    } else if (playerSum > dealerSum) 
-    {
-      cout << "Player Wins this round" << endl;
+      
       playerScore++;
 
     } else if (dealerSum < playerSum) 
     {
-      cout << "Dealer Wins this round" << endl;
+      
       dealerScore++;
     
     } else 
     {
       cout << "Draw!" << endl;
-      cout << "No points awarded to either person" << endl;
+      cout << "No points awarded to either group" << endl;
     }
     //resets the cards given to the players and also the deck
     deck.clear();
