@@ -13,12 +13,18 @@ Card c;
 void createCards()
 {
 
-    for (int i = 0; i < cNames->size(); i++)
+    for (int i = 0; i < 7; i++)
     {
-        for (int j = 0; j < Suits->size(); j++)
+        for (int j = 0; j < 4; j++)
         {
+            //std::cout << "I equals: " << std:: endl;
+            //std::cout << i << std:: endl; 
+
+            //std::cout << "J equals: " << std:: endl;
+            //std::cout << j << std:: endl; 
           
-          std::cout << cNames[j] + " of " +  Suits[i] << std::endl;
+          
+          std::cout << cNames[i] + " of " +  Suits[j] << std::endl;
           
 
           //std::cout << "hey" << std::endl;
@@ -26,6 +32,8 @@ void createCards()
         }
     }
 }
+
+
     /*
     for (int i = 0; i < 5; i++)
     {
