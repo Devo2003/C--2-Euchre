@@ -54,10 +54,12 @@ int main()
   //3 players
   //total 4 players
   std::vector<int> playerHand;
+  std::vector<int> playerHand2;
+  std::vector<int> playerHand3;
   //Seed
   srand(time(NULL));
 
-  //Loop to simulate 100 rounds of BlackJack
+  
   
 
     Deck(deck);    // Creation of the deck
@@ -109,8 +111,7 @@ int main()
 
     cout << "---------" << endl;
 
-    // SUM EM UP
-    // determines who busts, or win the round
+    
 
     // ERROR ---
     if (playerSum > dealerSum) 

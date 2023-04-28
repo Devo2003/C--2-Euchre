@@ -14,7 +14,7 @@ class Card{
 public: 
 
 
-//Card(std::string suit, std::string names);
+Card Cards(std::string suit, std::string names);
 //td::string suit;
 
 

@@ -7,11 +7,13 @@
 
 //void Deck(vector<int> &deck);
 std::vector<Card> cards;
-Card c;
+
 
 //sets up all combination of card types
 void createCards()
 {
+    Card c;
+    
 
     for (int i = 0; i < 7; i++)
     {
@@ -25,6 +27,8 @@ void createCards()
           
           
           std::cout << cNames[i] + " of " +  Suits[j] << std::endl;
+          //c = cNames[i] + Suits[j];
+          cards.push_back(c);
           
 
           //std::cout << "hey" << std::endl;

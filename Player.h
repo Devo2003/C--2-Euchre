@@ -7,8 +7,8 @@
 class Player
 {
     
-    //string name;
-    //vector<Card>hand;
+    string name;
+    vector<Card>hand;
 
 
     void players(){
